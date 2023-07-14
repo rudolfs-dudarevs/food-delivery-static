@@ -12,31 +12,7 @@ const ContactUs = () => {
  } = useForm();
 
  const onSubmit = (data) => {
-  const hostAddress = import.meta.env.VITE_HOST || window.location.origin;
-  console.log(hostAddress);
-  const apiUrl = `${hostAddress}/contact-us`;
-  console.log("Form data:", data);
-  fetch(apiUrl, {
-   headers: {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-   },
-   method: "POST",
-   body: JSON.stringify(data),
-  })
-   .then(async (res) => {
-    const data = await res.json();
-
-    if (res.ok) {
-     console.log(data.message);
-     setIsSent(true);
-    }
-
-    throw new Error(`Server responded with an error: ${data.message}`);
-   })
-   .catch((error) => {
-    console.log(error);
-   });
+  setIsSent(true);
  };
 
  const contactForm = () => {
