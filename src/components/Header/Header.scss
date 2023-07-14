@@ -1,0 +1,29 @@
+/* Style for Mobile */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+  box-sizing: border-box;
+
+  .logo {
+    width: 75px;
+    height: auto;
+    margin-left: 6%;
+  }
+}
+
+/* Style for Desktop */
+
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 70px;
+
+    .logo {
+      width: 100px;
+      margin-left: 6.25%;
+    }
+  }
+}

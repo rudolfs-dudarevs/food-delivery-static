@@ -1,0 +1,14 @@
+.not-found {
+  text-align: center;
+  font-size: 64px;
+  font-weight: bold;
+
+  background-color: var(--grey-bg);
+  color: var(--white);
+  width: 100vw;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

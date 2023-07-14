@@ -1,0 +1,68 @@
+.contact-us__wrapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+
+  .contact-us__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: min-content;
+    margin: 0 auto;
+  }
+
+  .contact-us__title {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    margin: 10% 10px 10px 10px;
+  }
+
+  .contact-us__input {
+    height: 48px;
+    width: 90%;
+    max-width: 400px;
+
+    font-size: 1rem;
+    padding: 0 30px;
+    border-radius: 30px;
+    outline: none;
+    border: 3px solid var(--lightgrey);
+  }
+
+  .contact-us__input-area {
+    width: 90%;
+    max-width: 400px;
+
+    height: 110px;
+    font-size: 1rem;
+    padding: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: 3px solid var(--lightgrey);
+  }
+
+  .contact-us__error {
+    color: var(--orange);
+  }
+}
+
+.contact-us_sent-success {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 50px;
+  box-sizing: border-box;
+
+  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--orange);
+}

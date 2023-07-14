@@ -1,0 +1,40 @@
+.how-app-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 462px;
+
+  box-sizing: border-box;
+
+  .section-title {
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+
+    padding-bottom: 49px;
+    border-bottom: 3px solid #e4e4e4;
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .how-app-works {
+    min-height: 884px;
+    padding-bottom: 120px;
+
+    .section-title {
+      font-family: "Poppins";
+      font-size: 2.75rem;
+
+      padding-bottom: 0;
+      border-bottom: none;
+      padding-top: 72px;
+      border-top: 3px solid #e4e4e4;
+      max-width: 884px;
+    }
+  }
+}
